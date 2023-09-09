@@ -1,27 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
-import './Vidhi.css';
-import Button from './Button'; 
+import Header from './Header';
+import Name from './Name';
+import Welcome from './Welcome';
+import Whishes from './Whishes';
+
 
 function App() {
   return (
-    <div className="First">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>hello world</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">
+      <h1>hii vidhi gupta</h1>
+      <Header />
+      <Name />
+      <Whishes name= "vidhi" hobby="cricket" >
+      <p> Vidhi gupta this side</p>
+      <button>Click here</button>
+      </Whishes>
+      <Whishes name= "clark" hobby="football" />
+      <Whishes name= "james" hobby="chess" >
+        <button>Submit Here</button>
+      </Whishes>
+      <Welcome name="Vidhi" hobby="Coding" />
     </div>
   );
 }
